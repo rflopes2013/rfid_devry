@@ -6,7 +6,8 @@ const options = {
   host: config.mysql.host,
   user: config.mysql.user,
   password: config.mysql.password,
-  database: config.mysql.database
+  database: config.mysql.database,
+  socket: config.mysql.socket
 };
 
 const db = mysql.createConnection(options);
